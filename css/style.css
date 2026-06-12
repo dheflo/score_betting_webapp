@@ -146,3 +146,18 @@ button:hover {
 .cta_confirm {
     flex-shrink: 0;
 }
+
+.ranking_header,
+.ranking_row {
+    display: grid;
+    grid-template-columns: 60px 1fr 100px;
+    align-items: center;
+}
+
+.rank {
+    text-align: center;
+}
+
+.points {
+    text-align: right;
+}

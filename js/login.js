@@ -1,0 +1,1 @@
+import { saveCurrentPlayer } from "./main.js";
