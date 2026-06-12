@@ -95,6 +95,10 @@ button:hover {
     gap: 1rem;
 }
 
+.matches-title {
+    margin-block-end: 2rem !important;
+}
+
 .match_container {
     display: flex;
     justify-content: space-between;
@@ -102,17 +106,19 @@ button:hover {
     background-color: rgb(200, 200, 200);
     padding: 1.5rem;
     border-radius: 0.5rem;
+
 }
 
 .date {
     width: 6rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .score {
-    flex: 1;
     display: flex;
     justify-content: center;
+    flex-direction: row;
     align-items: center;
     gap: 1rem;
 }
