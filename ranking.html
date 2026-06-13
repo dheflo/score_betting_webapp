@@ -6,44 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classement
     </title>
-    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
 </head>
 
 <body>
     <section class="ranking">
-
-        <div class="ranking_header">
-            <div>#</div>
-            <div>Joueur</div>
-            <div>Points</div>
+        <h1>Classement</h1>
+    
+        <div class="ranking_table">
+            <div class="ranking_row ranking_head">
+                <div class="ranking_position">#</div>
+                <div class="ranking_username">Joueur</div>
+                <div class="ranking_points">Points</div>
+            </div>
+    
+            <div id="rankingList">
+                <div class="ranking_row">
+                    <div class="ranking_position">1</div>
+                    <div class="ranking_username">Florentin</div>
+                    <div class="ranking_points">42 pts</div>
+                </div>
+    
+                <div class="ranking_row">
+                    <div class="ranking_position">2</div>
+                    <div class="ranking_username">Julie</div>
+                    <div class="ranking_points">36 pts</div>
+                </div>
+    
+                <div class="ranking_row">
+                    <div class="ranking_position">3</div>
+                    <div class="ranking_username">Marc</div>
+                    <div class="ranking_points">24 pts</div>
+                </div>
+            </div>
         </div>
-
-        <div id="ranking_list">
-
-            <!-- Joueur 1 -->
-            <div class="ranking_row">
-                <div class="rank">1</div>
-                <div class="username">Florentin</div>
-                <div class="points">128</div>
-            </div>
-
-            <!-- Joueur 2 -->
-            <div class="ranking_row">
-                <div class="rank">2</div>
-                <div class="username">Julie</div>
-                <div class="points">115</div>
-            </div>
-
-            <!-- Joueur 3 -->
-            <div class="ranking_row">
-                <div class="rank">3</div>
-                <div class="username">Thomas</div>
-                <div class="points">97</div>
-            </div>
-
-        </div>
-
     </section>
     <script src="/js/results.js"></script>
     <script src="/js/main.js"></script>

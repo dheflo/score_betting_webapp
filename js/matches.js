@@ -1,7 +1,16 @@
-import {
-    getCurrentPlayer,
-    saveCurrentPlayer,
-    redirectIfNotLoggedIn
-} from "./main.js";
+const username = localStorage.getItem("username");
 
-import { calculPoints } from "./results.js";
+if (!username) {
+    window.location.href = "index.html";
+}
+
+document.getElementById("welcomeMessage").textContent =
+    `Bonjour, ${username}`;
+
+document.getElementById("logout").addEventListener("click", (event) => {
+    event.preventDefault();
+
+    localStorage.removeItem("username");
+
+    window.location.href = "index.html";
+});
