@@ -6,43 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Classement
     </title>
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css" />
 </head>
 
 <body>
     <section class="ranking">
         <h1>Classement</h1>
+        <section class="ranking">
     
-        <div class="ranking_table">
-            <div class="ranking_row ranking_head">
-                <div class="ranking_position">#</div>
-                <div class="ranking_username">Joueur</div>
-                <div class="ranking_points">Points</div>
+            <div class="ranking_table">
+                <div class="ranking_row ranking_head">
+                    <div>Rang</div>
+                    <div>Pseudo</div>
+                    <div>Points</div>
+                </div>
+        
+                <div id="rankingList"></div>
             </div>
-    
-            <div id="rankingList">
-                <div class="ranking_row">
-                    <div class="ranking_position">1</div>
-                    <div class="ranking_username">Florentin</div>
-                    <div class="ranking_points">42 pts</div>
-                </div>
-    
-                <div class="ranking_row">
-                    <div class="ranking_position">2</div>
-                    <div class="ranking_username">Julie</div>
-                    <div class="ranking_points">36 pts</div>
-                </div>
-    
-                <div class="ranking_row">
-                    <div class="ranking_position">3</div>
-                    <div class="ranking_username">Marc</div>
-                    <div class="ranking_points">24 pts</div>
-                </div>
-            </div>
-        </div>
+        </section>
     </section>
-    <script src="/js/results.js"></script>
-    <script src="/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script type="module" src="/js/results.js"></script>
 </body>
 
 </html>

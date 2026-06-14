@@ -180,3 +180,28 @@ button:hover {
 .ranking_points {
     text-align: right;
 }
+
+.bet_done {
+    background-color: #666;
+    color: #fff;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.ranking_table {
+    max-width: 800px;
+    margin: 0 auto;
+    color :white;
+}
+
+.ranking_row {
+    display: grid;
+    grid-template-columns: 80px 1fr 100px;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+}
+
+.ranking_header {
+    font-weight: bold;
+}
