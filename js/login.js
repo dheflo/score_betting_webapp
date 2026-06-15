@@ -6,6 +6,13 @@ const supabaseClient = supabase.createClient(
     SUPABASE_KEY
 );
 
+const existingUsername = localStorage.getItem("username");
+const existingPlayerId = localStorage.getItem("playerId");
+
+if (existingUsername && existingPlayerId) {
+    window.location.href = "matches.html";
+}
+
 const loginForm = document.getElementById("loginForm");
 
 loginForm.addEventListener("submit", async (event) => {

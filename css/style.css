@@ -280,3 +280,10 @@ input {
 .bonus_input_field {
     width: 100%;
 }
+
+.main_container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
