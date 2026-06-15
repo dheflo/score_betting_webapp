@@ -8,6 +8,8 @@ const supabaseClient = supabase.createClient(
     SUPABASE_KEY
 );
 
+const BONUS_DEADLINE = new Date("2026-06-30T18:00:00+02:00");
+
 const rankingList = document.getElementById("rankingList");
 
 function calculPoints(scoreHomeReal, scoreAwayReal, scoreHomeBet, scoreAwayBet) {
@@ -79,3 +81,21 @@ async function loadRanking() {
 }
 
 loadRanking();
+
+function isBonusClosed() {
+    return new Date() >= BONUS_DEADLINE;
+}
+
+if (isBonusClosed()) {
+
+    document.querySelectorAll(".bonus_input_field").forEach(input => {
+        input.disabled = true;
+    });
+
+    document.querySelectorAll(".bonus_button").forEach(button => {
+        button.disabled = true;
+        button.textContent = "Bonus clôturés";
+        button.classList.add("bet_done");
+    });
+
+}

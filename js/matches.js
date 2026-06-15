@@ -1,3 +1,5 @@
+import { matchSchedule } from "./match_schedule.js";
+
 const SUPABASE_URL = 'https://ondxyxdpszgixnxdzmqg.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_znqfXElADeyxotjuaumZ-Q__WFRrKiK';
 
@@ -54,8 +56,22 @@ async function loadExistingBets() {
 
 loadExistingBets();
 
+document.querySelectorAll(".match_container").forEach((matchContainer) => {
+
+    const matchId = matchContainer.dataset.matchId;
+
+    if (isMatchStarted(matchId)) {
+        lockMatch(matchContainer);
+    }
+
+});
+
 document.querySelectorAll(".cta_confirm").forEach((button) => {
     button.addEventListener("click", async () => {
+        if (isMatchStarted(matchId)) {
+            alert("Ce match a déjà commencé.");
+            return;
+        }
         const matchContainer = button.closest(".match_container");
 
         const matchId = matchContainer.dataset.matchId;
@@ -89,5 +105,29 @@ document.querySelectorAll(".cta_confirm").forEach((button) => {
         disableBetButton(button);
     });
 });
+
+function isMatchStarted(matchId) {
+    const match = matchSchedule[matchId];
+
+    if (!match) return false;
+
+    const kickoff = new Date(match.kickoff);
+    const now = new Date();
+
+    return now >= kickoff;
+}
+
+function lockMatch(matchContainer) {
+    const button = matchContainer.querySelector(".cta_confirm");
+    const inputs = matchContainer.querySelectorAll("input");
+
+    button.textContent = "Pari cloturé";
+    button.disabled = true;
+    button.classList.add("bet_done");
+
+    inputs.forEach(input => {
+        input.disabled = true;
+    });
+}
 
 

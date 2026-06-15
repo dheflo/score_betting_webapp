@@ -23,17 +23,38 @@ loginForm.addEventListener("submit", async (event) => {
         .value
         .trim();
 
-    if (!username) return;
+    const password = document
+        .getElementById("password")
+        .value
+        .trim();
 
-    // Recherche du joueur
-    const { data: existingPlayer } = await supabaseClient
+    if (!username || !password) {
+        alert("Merci de remplir le pseudo et le mot de passe.");
+        return;
+    }
+
+    if (password.length < 4) {
+        alert("Le mot de passe doit contenir au moins 4 caractères.");
+        return;
+    }
+
+    const { data: existingPlayer, error: searchError } = await supabaseClient
         .from("players")
         .select("*")
         .eq("username", username)
         .maybeSingle();
 
-    // Joueur déjà existant
+    if (searchError) {
+        console.error(searchError);
+        alert("Erreur lors de la vérification du joueur.");
+        return;
+    }
+
     if (existingPlayer) {
+        if (existingPlayer.password !== password) {
+            alert("Mot de passe incorrect.");
+            return;
+        }
 
         localStorage.setItem("username", existingPlayer.username);
         localStorage.setItem("playerId", existingPlayer.id);
@@ -42,12 +63,12 @@ loginForm.addEventListener("submit", async (event) => {
         return;
     }
 
-    // Création du joueur
     const { data, error } = await supabaseClient
         .from("players")
         .insert([
             {
                 username: username,
+                password: password,
                 points: 0
             }
         ])

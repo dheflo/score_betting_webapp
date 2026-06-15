@@ -12,8 +12,8 @@ export const scoreOfficial = {
 
     "ci-ec": { home: 1, away: 0, finished: true },
     "se-tn": { home: 5, away: 1, finished: true },
-    "es-cv": { home: 0, away: 0, finished: false },
-    "be-eg": { home: 0, away: 0, finished: false },
+    "es-cv": { home: 0, away: 0, finished: true },
+    "be-eg": { home: 1, away: 1, finished: true },
     "sa-uy": { home: 0, away: 0, finished: false },
     "ir-nz": { home: 0, away: 0, finished: false },
     "fr-sn": { home: 0, away: 0, finished: false },
