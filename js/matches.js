@@ -23,6 +23,37 @@ document.getElementById("logout").addEventListener("click", () => {
     window.location.href = "index.html";
 });
 
+function disableBetButton(button) {
+    button.textContent = "Pari effectué";
+    button.disabled = true;
+    button.classList.add("bet_done");
+}
+
+async function loadExistingBets() {
+    const { data, error } = await supabaseClient
+        .from("pronostics")
+        .select("match_id")
+        .eq("player_id", Number(playerId));
+
+    if (error) {
+        console.error(error);
+        return;
+    }
+
+    data.forEach((bet) => {
+        const matchContainer = document.querySelector(
+            `.match_container[data-match-id="${bet.match_id}"]`
+        );
+
+        if (!matchContainer) return;
+
+        const button = matchContainer.querySelector(".cta_confirm");
+        disableBetButton(button);
+    });
+}
+
+loadExistingBets();
+
 document.querySelectorAll(".cta_confirm").forEach((button) => {
     button.addEventListener("click", async () => {
         const matchContainer = button.closest(".match_container");
@@ -55,11 +86,7 @@ document.querySelectorAll(".cta_confirm").forEach((button) => {
             return;
         }
 
-        button.textContent = "Pari effectué";
-        button.disabled = true;
-        button.classList.add("bet_done");
-
-        
+        disableBetButton(button);
     });
 });
 

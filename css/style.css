@@ -9,9 +9,46 @@ html {
     font-size: 16px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+a:hover {
+    color:lightcoral;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #282828;
+    background-color: #dbdbdb;
+    max-width:1200px;
+    margin: auto;
+}
+
+header{
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav_pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
 }
 
 /* PAGE INSCRIPTION */
@@ -26,10 +63,12 @@ body {
 .form-container {
     max-width: 30rem;
     padding: 3rem;
+    margin:auto;
     background-color: #fff;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1.5rem;
 }
 
@@ -82,14 +121,25 @@ input {
     transition: opacity 0.2s;
 }
 
-button:hover {
+#logout {
+    border:none;
+    background: none;
+    height:0;
+    cursor: pointer;
+}
+
+#logout:hover {
+    color: lightcoral;
+}
+
+.cta_confirm:hover {
     background-color: #3aaa06;
 }
 
 /* PAGE MATCHS */
 .matches {
     width: 100%;
-    max-width: 90rem;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -204,4 +254,29 @@ button:hover {
 
 .ranking_header {
     font-weight: bold;
+}
+
+.bet_done {
+    background-color: #666;
+    color: white;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.bonus_points_containers {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:1rem;
+}
+
+.bonus_container {
+    display: flex;
+    justify-content: column;
+    gap:1rem;
+}
+
+.bonus_input_field {
+    width: 100%;
 }

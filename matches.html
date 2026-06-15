@@ -12,12 +12,19 @@
 <body>
     <div class="main_container matches_page">
         <header>
+            <nav>
+                <div class="nav_pages">
+                    <a href="matches.html"><img src="./img/wc26-logo.png" alt="Logo" class="logo" width="128"></a> 
+                    <a href="ranking.html" class="link_results">Classement</a>
+                    <a href="bonus.html" class="link_bonus">Bonus</a>
+                </div>
+                
+                <div class="nav_links">
+                    <p id="welcomeMessage"></p>
+                    <button id="logout" type="button">Déconnexion</button>
+                </div>
+            </nav>
             <h1 class="matches-title">Les matchs</h1>
-            <img src="./img/wc26-logo.png" alt="Logo" class="logo" width="128">
-            <p id="welcomeMessage"></p>
-            <button id="logout" type="button">
-                Déconnexion
-            </button>
         </header>
 
         <section class="matches">
@@ -26,9 +33,9 @@
                 <div class="score">
                     <span class="fi fi-mx"></span>
                     <p class="match_text">Mexique</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Afrique du Sud</p>
                     <span class="fi fi-za"></span>
                 </div>
@@ -39,9 +46,9 @@
                 <div class="score">
                     <span class="fi fi-kr"></span>
                     <p class="match_text">Corée du Sud</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">République tchèque</p>
                     <span class="fi fi-cz"></span>
                 </div>
@@ -52,9 +59,9 @@
                 <div class="score">
                     <span class="fi fi-ca"></span>
                     <p class="match_text">Canada</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Bosnie-Herzégovine</p>
                     <span class="fi fi-ba"></span>
                 </div>
@@ -65,9 +72,9 @@
                 <div class="score">
                     <span class="fi fi-us"></span>
                     <p class="match_text">États-Unis</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Paraguay</p>
                     <span class="fi fi-py"></span>
                 </div>
@@ -78,9 +85,9 @@
                 <div class="score">
                     <span class="fi fi-qa"></span>
                     <p class="match_text">Qatar</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Suisse</p>
                     <span class="fi fi-ch"></span>
                 </div>
@@ -91,9 +98,9 @@
                 <div class="score">
                     <span class="fi fi-br"></span>
                     <p class="match_text">Brésil</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Maroc</p>
                     <span class="fi fi-ma"></span>
                 </div>
@@ -104,9 +111,9 @@
                 <div class="score">
                     <span class="fi fi-ht"></span>
                     <p class="match_text">Haïti</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Écosse</p>
                     <span class="fi fi-gb-sct"></span>
                 </div>
@@ -117,9 +124,9 @@
                 <div class="score">
                     <span class="fi fi-au"></span>
                     <p class="match_text">Australie</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Turquie</p>
                     <span class="fi fi-tr"></span>
                 </div>
@@ -130,9 +137,9 @@
                 <div class="score">
                     <span class="fi fi-de"></span>
                     <p class="match_text">Allemagne</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Curaçao</p>
                     <span class="fi fi-cw"></span>
                 </div>
@@ -143,9 +150,9 @@
                 <div class="score">
                     <span class="fi fi-nl"></span>
                     <p class="match_text">Pays-Bas</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Japon</p>
                     <span class="fi fi-jp"></span>
                 </div>
@@ -156,9 +163,9 @@
                 <div class="score">
                     <span class="fi fi-ci"></span>
                     <p class="match_text">Côte d’Ivoire</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Équateur</p>
                     <span class="fi fi-ec"></span>
                 </div>
@@ -169,9 +176,9 @@
                 <div class="score">
                     <span class="fi fi-se"></span>
                     <p class="match_text">Suède</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Tunisie</p>
                     <span class="fi fi-tn"></span>
                 </div>
@@ -182,9 +189,9 @@
                 <div class="score">
                     <span class="fi fi-es"></span>
                     <p class="match_text">Espagne</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Cap-Vert</p>
                     <span class="fi fi-cv"></span>
                 </div>
@@ -195,9 +202,9 @@
                 <div class="score">
                     <span class="fi fi-be"></span>
                     <p class="match_text">Belgique</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Égypte</p>
                     <span class="fi fi-eg"></span>
                 </div>
@@ -208,9 +215,9 @@
                 <div class="score">
                     <span class="fi fi-sa"></span>
                     <p class="match_text">Arabie saoudite</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Uruguay</p>
                     <span class="fi fi-uy"></span>
                 </div>
@@ -221,9 +228,9 @@
                 <div class="score">
                     <span class="fi fi-ir"></span>
                     <p class="match_text">Iran</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Nouvelle-Zélande</p>
                     <span class="fi fi-nz"></span>
                 </div>
@@ -234,9 +241,9 @@
                 <div class="score">
                     <span class="fi fi-fr"></span>
                     <p class="match_text">France</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Sénégal</p>
                     <span class="fi fi-sn"></span>
                 </div>
@@ -247,9 +254,9 @@
                 <div class="score">
                     <span class="fi fi-iq"></span>
                     <p class="match_text">Irak</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Norvège</p>
                     <span class="fi fi-no"></span>
                 </div>
@@ -260,9 +267,9 @@
                 <div class="score">
                     <span class="fi fi-ar"></span>
                     <p class="match_text">Argentine</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Algérie</p>
                     <span class="fi fi-dz"></span>
                 </div>
@@ -273,9 +280,9 @@
                 <div class="score">
                     <span class="fi fi-at"></span>
                     <p class="match_text">Autriche</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Jordanie</p>
                     <span class="fi fi-jo"></span>
                 </div>
@@ -286,9 +293,9 @@
                 <div class="score">
                     <span class="fi fi-pt"></span>
                     <p class="match_text">Portugal</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">RD Congo</p>
                     <span class="fi fi-cd"></span>
                 </div>
@@ -299,9 +306,9 @@
                 <div class="score">
                     <span class="fi fi-gb-eng"></span>
                     <p class="match_text">Angleterre</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Croatie</p>
                     <span class="fi fi-hr"></span>
                 </div>
@@ -312,9 +319,9 @@
                 <div class="score">
                     <span class="fi fi-gh"></span>
                     <p class="match_text">Ghana</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Panama</p>
                     <span class="fi fi-pa"></span>
                 </div>
@@ -325,9 +332,9 @@
                 <div class="score">
                     <span class="fi fi-uz"></span>
                     <p class="match_text">Ouzbékistan</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Colombie</p>
                     <span class="fi fi-co"></span>
                 </div>
@@ -338,9 +345,9 @@
                 <div class="score">
                     <span class="fi fi-cz"></span>
                     <p class="match_text">République tchèque</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Afrique du Sud</p>
                     <span class="fi fi-za"></span>
                 </div>
@@ -351,9 +358,9 @@
                 <div class="score">
                     <span class="fi fi-ch"></span>
                     <p class="match_text">Suisse</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Bosnie-Herzégovine</p>
                     <span class="fi fi-ba"></span>
                 </div>
@@ -364,9 +371,9 @@
                 <div class="score">
                     <span class="fi fi-ca"></span>
                     <p class="match_text">Canada</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Qatar</p>
                     <span class="fi fi-qa"></span>
                 </div>
@@ -377,9 +384,9 @@
                 <div class="score">
                     <span class="fi fi-mx"></span>
                     <p class="match_text">Mexique</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Corée du Sud</p>
                     <span class="fi fi-kr"></span>
                 </div>
@@ -390,9 +397,9 @@
                 <div class="score">
                     <span class="fi fi-us"></span>
                     <p class="match_text">États-Unis</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Australie</p>
                     <span class="fi fi-au"></span>
                 </div>
@@ -403,9 +410,9 @@
                 <div class="score">
                     <span class="fi fi-gb-sct"></span>
                     <p class="match_text">Écosse</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Maroc</p>
                     <span class="fi fi-ma"></span>
                 </div>
@@ -416,9 +423,9 @@
                 <div class="score">
                     <span class="fi fi-br"></span>
                     <p class="match_text">Brésil</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Haïti</p>
                     <span class="fi fi-ht"></span>
                 </div>
@@ -429,9 +436,9 @@
                 <div class="score">
                     <span class="fi fi-tr"></span>
                     <p class="match_text">Turquie</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Paraguay</p>
                     <span class="fi fi-py"></span>
                 </div>
@@ -442,9 +449,9 @@
                 <div class="score">
                     <span class="fi fi-nl"></span>
                     <p class="match_text">Pays-Bas</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Suède</p>
                     <span class="fi fi-se"></span>
                 </div>
@@ -455,9 +462,9 @@
                 <div class="score">
                     <span class="fi fi-de"></span>
                     <p class="match_text">Allemagne</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Côte d’Ivoire</p>
                     <span class="fi fi-ci"></span>
                 </div>
@@ -468,9 +475,9 @@
                 <div class="score">
                     <span class="fi fi-ec"></span>
                     <p class="match_text">Équateur</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Curaçao</p>
                     <span class="fi fi-cw"></span>
                 </div>
@@ -481,9 +488,9 @@
                 <div class="score">
                     <span class="fi fi-tn"></span>
                     <p class="match_text">Tunisie</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Japon</p>
                     <span class="fi fi-jp"></span>
                 </div>
@@ -494,9 +501,9 @@
                 <div class="score">
                     <span class="fi fi-es"></span>
                     <p class="match_text">Espagne</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Arabie saoudite</p>
                     <span class="fi fi-sa"></span>
                 </div>
@@ -507,9 +514,9 @@
                 <div class="score">
                     <span class="fi fi-be"></span>
                     <p class="match_text">Belgique</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Iran</p>
                     <span class="fi fi-ir"></span>
                 </div>
@@ -520,9 +527,9 @@
                 <div class="score">
                     <span class="fi fi-uy"></span>
                     <p class="match_text">Uruguay</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Cap-Vert</p>
                     <span class="fi fi-cv"></span>
                 </div>
@@ -533,9 +540,9 @@
                 <div class="score">
                     <span class="fi fi-nz"></span>
                     <p class="match_text">Nouvelle-Zélande</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Égypte</p>
                     <span class="fi fi-eg"></span>
                 </div>
@@ -546,9 +553,9 @@
                 <div class="score">
                     <span class="fi fi-ar"></span>
                     <p class="match_text">Argentine</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Autriche</p>
                     <span class="fi fi-at"></span>
                 </div>
@@ -559,9 +566,9 @@
                 <div class="score">
                     <span class="fi fi-fr"></span>
                     <p class="match_text">France</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Irak</p>
                     <span class="fi fi-iq"></span>
                 </div>
@@ -572,9 +579,9 @@
                 <div class="score">
                     <span class="fi fi-no"></span>
                     <p class="match_text">Norvège</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Sénégal</p>
                     <span class="fi fi-sn"></span>
                 </div>
@@ -585,9 +592,9 @@
                 <div class="score">
                     <span class="fi fi-jo"></span>
                     <p class="match_text">Jordanie</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Algérie</p>
                     <span class="fi fi-dz"></span>
                 </div>
@@ -598,9 +605,9 @@
                 <div class="score">
                     <span class="fi fi-pt"></span>
                     <p class="match_text">Portugal</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Ouzbékistan</p>
                     <span class="fi fi-uz"></span>
                 </div>
@@ -611,9 +618,9 @@
                 <div class="score">
                     <span class="fi fi-gb-eng"></span>
                     <p class="match_text">Angleterre</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Ghana</p>
                     <span class="fi fi-gh"></span>
                 </div>
@@ -624,9 +631,9 @@
                 <div class="score">
                     <span class="fi fi-pa"></span>
                     <p class="match_text">Panama</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Croatie</p>
                     <span class="fi fi-hr"></span>
                 </div>
@@ -637,9 +644,9 @@
                 <div class="score">
                     <span class="fi fi-co"></span>
                     <p class="match_text">Colombie</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">RD Congo</p>
                     <span class="fi fi-cd"></span>
                 </div>
@@ -650,9 +657,9 @@
                 <div class="score">
                     <span class="fi fi-ch"></span>
                     <p class="match_text">Suisse</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Canada</p>
                     <span class="fi fi-ca"></span>
                 </div>
@@ -663,9 +670,9 @@
                 <div class="score">
                     <span class="fi fi-ba"></span>
                     <p class="match_text">Bosnie-Herzégovine</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Qatar</p>
                     <span class="fi fi-qa"></span>
                 </div>
@@ -676,9 +683,9 @@
                 <div class="score">
                     <span class="fi fi-ma"></span>
                     <p class="match_text">Maroc</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Haïti</p>
                     <span class="fi fi-ht"></span>
                 </div>
@@ -689,9 +696,9 @@
                 <div class="score">
                     <span class="fi fi-gb-sct"></span>
                     <p class="match_text">Écosse</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Brésil</p>
                     <span class="fi fi-br"></span>
                 </div>
@@ -702,9 +709,9 @@
                 <div class="score">
                     <span class="fi fi-za"></span>
                     <p class="match_text">Afrique du Sud</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Corée du Sud</p>
                     <span class="fi fi-kr"></span>
                 </div>
@@ -715,9 +722,9 @@
                 <div class="score">
                     <span class="fi fi-cz"></span>
                     <p class="match_text">République tchèque</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Mexique</p>
                     <span class="fi fi-mx"></span>
                 </div>
@@ -728,9 +735,9 @@
                 <div class="score">
                     <span class="fi fi-cw"></span>
                     <p class="match_text">Curaçao</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Côte d’Ivoire</p>
                     <span class="fi fi-ci"></span>
                 </div>
@@ -741,9 +748,9 @@
                 <div class="score">
                     <span class="fi fi-ec"></span>
                     <p class="match_text">Équateur</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Allemagne</p>
                     <span class="fi fi-de"></span>
                 </div>
@@ -754,9 +761,9 @@
                 <div class="score">
                     <span class="fi fi-tn"></span>
                     <p class="match_text">Tunisie</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Pays-Bas</p>
                     <span class="fi fi-nl"></span>
                 </div>
@@ -767,9 +774,9 @@
                 <div class="score">
                     <span class="fi fi-jp"></span>
                     <p class="match_text">Japon</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Suède</p>
                     <span class="fi fi-se"></span>
                 </div>
@@ -780,9 +787,9 @@
                 <div class="score">
                     <span class="fi fi-tr"></span>
                     <p class="match_text">Turquie</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">États-Unis</p>
                     <span class="fi fi-us"></span>
                 </div>
@@ -793,9 +800,9 @@
                 <div class="score">
                     <span class="fi fi-py"></span>
                     <p class="match_text">Paraguay</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Australie</p>
                     <span class="fi fi-au"></span>
                 </div>
@@ -806,9 +813,9 @@
                 <div class="score">
                     <span class="fi fi-no"></span>
                     <p class="match_text">Norvège</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">France</p>
                     <span class="fi fi-fr"></span>
                 </div>
@@ -819,9 +826,9 @@
                 <div class="score">
                     <span class="fi fi-sn"></span>
                     <p class="match_text">Sénégal</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Irak</p>
                     <span class="fi fi-iq"></span>
                 </div>
@@ -832,9 +839,9 @@
                 <div class="score">
                     <span class="fi fi-cv"></span>
                     <p class="match_text">Cap-Vert</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Arabie saoudite</p>
                     <span class="fi fi-sa"></span>
                 </div>
@@ -845,9 +852,9 @@
                 <div class="score">
                     <span class="fi fi-uy"></span>
                     <p class="match_text">Uruguay</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Espagne</p>
                     <span class="fi fi-es"></span>
                 </div>
@@ -858,9 +865,9 @@
                 <div class="score">
                     <span class="fi fi-nz"></span>
                     <p class="match_text">Nouvelle-Zélande</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Belgique</p>
                     <span class="fi fi-be"></span>
                 </div>
@@ -871,9 +878,9 @@
                 <div class="score">
                     <span class="fi fi-eg"></span>
                     <p class="match_text">Égypte</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Iran</p>
                     <span class="fi fi-ir"></span>
                 </div>
@@ -884,9 +891,9 @@
                 <div class="score">
                     <span class="fi fi-pa"></span>
                     <p class="match_text">Panama</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Angleterre</p>
                     <span class="fi fi-gb-eng"></span>
                 </div>
@@ -897,9 +904,9 @@
                 <div class="score">
                     <span class="fi fi-hr"></span>
                     <p class="match_text">Croatie</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Ghana</p>
                     <span class="fi fi-gh"></span>
                 </div>
@@ -910,9 +917,9 @@
                 <div class="score">
                     <span class="fi fi-co"></span>
                     <p class="match_text">Colombie</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Portugal</p>
                     <span class="fi fi-pt"></span>
                 </div>
@@ -923,9 +930,9 @@
                 <div class="score">
                     <span class="fi fi-cd"></span>
                     <p class="match_text">RD Congo</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Ouzbékistan</p>
                     <span class="fi fi-uz"></span>
                 </div>
@@ -936,9 +943,9 @@
                 <div class="score">
                     <span class="fi fi-dz"></span>
                     <p class="match_text">Algérie</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Autriche</p>
                     <span class="fi fi-at"></span>
                 </div>
@@ -949,9 +956,9 @@
                 <div class="score">
                     <span class="fi fi-jo"></span>
                     <p class="match_text">Jordanie</p>
-                    <input type="number" placeholder="0" class="score_home" min="0" max="20"required>
+                    <input type="number" value="0" class="score_home" min="0" max="20"required>
                     <p>-</p>
-                    <input type="number" placeholder="0" class="score_away" min="0" max="20"required>
+                    <input type="number" value="0" class="score_away" min="0" max="20"required>
                     <p class="match_text">Argentine</p>
                     <span class="fi fi-ar"></span>
                 </div>

@@ -1,4 +1,4 @@
-import { matchResults } from "./score_official.js";
+import { scoreOfficial } from "./score_official.js";
 
 const SUPABASE_URL = "https://ondxyxdpszgixnxdzmqg.supabase.co";
 const SUPABASE_KEY = 'sb_publishable_znqfXElADeyxotjuaumZ-Q__WFRrKiK';
@@ -39,7 +39,7 @@ async function loadRanking() {
     const ranking = {};
 
     pronostics.forEach((prono) => {
-        const officialResult = matchResults[prono.match_id];
+        const officialResult = scoreOfficial[prono.match_id];
 
         if (!officialResult || !officialResult.finished) {
             return;
