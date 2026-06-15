@@ -10,8 +10,8 @@ export const scoreOfficial = {
     "de-cw": { home: 7, away: 1, finished: true },
     "nl-jp": { home: 2, away: 2, finished: true },
 
-    "ci-ec": { home: 0, away: 0, finished: false },
-    "se-tn": { home: 0, away: 0, finished: false },
+    "ci-ec": { home: 1, away: 0, finished: true },
+    "se-tn": { home: 5, away: 1, finished: true },
     "es-cv": { home: 0, away: 0, finished: false },
     "be-eg": { home: 0, away: 0, finished: false },
     "sa-uy": { home: 0, away: 0, finished: false },
